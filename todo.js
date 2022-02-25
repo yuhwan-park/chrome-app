@@ -26,13 +26,18 @@ function paintTodo(Todo) {
 }
 
 todoForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const newTodo = todoInput.value;
-  todoInput.value = "";
-  const newTodoObj = { id: Date.now(), text: newTodo };
-  toDos.push(newTodoObj);
-  paintTodo(newTodoObj);
-  toDoData();
+  if (toDos.length >= 10) {
+    event.preventDefault();
+    alert("STOP! You have too much to do. Let's do what you have to do first.");
+  } else {
+    event.preventDefault();
+    const newTodo = todoInput.value;
+    todoInput.value = "";
+    const newTodoObj = { id: Date.now(), text: newTodo };
+    toDos.push(newTodoObj);
+    paintTodo(newTodoObj);
+    toDoData();
+  }
 });
 
 const savedtoDos = localStorage.getItem("todo");
