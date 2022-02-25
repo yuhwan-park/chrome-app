@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 80%;
+}
+
+#top_nav {
+  height: 20vh;
+}
+
+#clock {
+  font-weight: 400;
+  font-size: 120px;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+#middle_stuff {
+  height: 73vh;
+}
+.cent {
+  max-width: 87.5%;
+}
+
+.focus {
+  display: block;
+  text-align: center;
+  font-size: 2.1875em;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 0;
+}
+
+input {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 4px solid white;
+  outline-style: none;
+  text-align: center;
+  caret-color: white;
+  color: white;
+  font-size: 50px !important;
+}
+
+div span {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+#toDoForm {
+  display: flex;
+  justify-content: center;
+}
+
+#logInForm {
+  display: flex;
+  justify-content: center;
+}
+
+#logOut {
+  position: absolute;
+  top: 1px;
+}
+
+#hello {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-weight: 200;
+}
+
+ul {
+  text-align: center;
+  padding-left: 100px !important;
+}
+
+li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+#todo_list li span {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+#todo_list li button {
+  margin-left: 7px;
+}
+
+.icon {
+  background-image: url(img/trash.PNG);
+  height: 30px;
+  width: 30px;
+}

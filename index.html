@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Momentum</title>
+</head>
+
+<body class="container-fluid">
+    <div id="top_nav">
+        <ul id="todo_list" class="row">
+        </ul>
+    </div>
+    <div id="middle_stuff" class="row">
+        <div class="col-12">
+            <p id="clock">00:00</p>
+            <h1 id="hello" class="hidden col-12"></h1><br>
+        </div>
+        <form id="toDoForm">
+            <div>
+                <span class="focus hidden">What is main focus for today?</span>
+                <input required type="text" class="toDoInput hidden" placeholder="Write a to do list">
+            </div>
+        </form>
+        <form id="logInForm">
+            <div class="cent">
+                <div class="focus">What is your Name?</div>
+                <input required maxlength="20" type="text" class="loginInput" />
+            </div>
+        </form>
+    </div>
+    <button id="logOut" class="hidden btn btn-primary">LogOut</button>
+    <div id="quote" class="row">
+        <span></span><br>
+        <span></span>
+    </div>
+    <script src="app.js"></script>
+    <script src="clock.js"></script>
+    <script src="quotesandbgimg.js"></script>
+    <script src="todo.js"></script>
+</body>
+
+</html>
