@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto:wght@500;900&display=swap");
 * {
   box-sizing: border-box;
   overflow-wrap: break-word;
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .hidden {
@@ -88,7 +90,7 @@ div span {
   text-align: center;
   color: white;
   font-size: 60px;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 ul {
@@ -104,7 +106,7 @@ li {
 #todo_list li span {
   color: white;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 #todo_list li button {
